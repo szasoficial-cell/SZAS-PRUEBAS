@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="SZAS — Intriga y Rebeldía. Tienda oficial.">
+<title>SZAS — Intriga y Rebeldía</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<header class="header">
+  <nav class="nav">
+    <a class="logo" href="#inicio" aria-label="SZAS inicio">SZAS</a>
+    <div class="nav-links" id="navLinks">
+      <a href="#coleccion">COLECCIÓN</a>
+      <a href="#productos">PRODUCTOS</a>
+      <a href="#redes">REDES</a>
+    </div>
+    <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="Abrir menú">MENÚ</button>
+    <button class="cart-btn" id="openCart" type="button" aria-label="Abrir carrito">CARRITO <span id="cartCount">0</span></button>
+  </nav>
+</header>
+
+<main id="inicio">
+<section class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">SZAS / COLOMBIA</div>
+    <h1>INTRIGA<br><span>Y REBELDÍA</span></h1>
+    <p>ROPA CON PERSONALIDAD.</p>
+    <a class="btn light" href="#productos">VER PRODUCTOS</a>
+  </div>
+</section>
+
+<section class="manifesto">
+  <p>SZAS</p>
+  <h2>INTRIGA<br>Y REBELDÍA.</h2>
+</section>
+
+<section class="section" id="coleccion">
+  <div class="section-head collection-head">
+    <div><span class="eyebrow dark-eyebrow">EXPLORA</span><h2>COLECCIÓN</h2></div>
+  </div>
+  <!-- app.js dibuja los botones TODO / TOPS / OUTERWEAR aquí a partir de config.js -->
+  <div class="filters" id="filters" role="tablist" aria-label="Filtrar productos"></div>
+</section>
+
+<section class="section products-section" id="productos">
+  <div class="section-head">
+    <div><span class="eyebrow dark-eyebrow">TIENDA</span><h2>PRODUCTOS</h2></div>
+    <span class="product-count" id="productCount"></span>
+  </div>
+  <!-- app.js dibuja las tarjetas de producto aquí a partir de config.js -->
+  <div class="products" id="products"></div>
+  <div class="empty-state" id="emptyState" hidden>NO HAY PRODUCTOS EN ESTA CATEGORÍA.</div>
+</section>
+
+<section class="info">
+  <div class="info-grid">
+    <div><b>ENVÍOS</b><span>Envíos a toda Colombia. Consulta tiempos y costo antes de confirmar.</span></div>
+    <div><b>COMPRA DIRECTA</b><span>Selecciona producto, talla y cantidad. Finaliza tu pedido por WhatsApp.</span></div>
+    <div><b>CAMBIOS</b><span>Si necesitas ayuda con tu pedido, escríbenos por WhatsApp.</span></div>
+  </div>
+</section>
+
+<section class="social-section" id="redes">
+  <div class="social-inner">
+    <span class="eyebrow dark-eyebrow">SÍGUENOS</span>
+    <h2>@SZAS</h2>
+    <p>DESCUBRE LOS DROPS, NUEVOS LANZAMIENTOS Y EL UNIVERSO SZAS.</p>
+    <div class="social-links">
+      <a id="instagramLink" href="#" target="_blank" rel="noopener noreferrer"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="6.7" r="1.15" fill="currentColor"/></svg><span>INSTAGRAM</span></a>
+      <a id="tiktokLink" href="#" target="_blank" rel="noopener noreferrer"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14.2 3v11.1a4.1 4.1 0 1 1-3.1-4v3.1a1.2 1.2 0 1 0 0 2.4c.7 0 1.2-.5 1.2-1.2V3h1.9c.4 1.8 1.5 3.1 3.2 3.7V9c-1.2-.2-2.3-.7-3.2-1.4V14a5.1 5.1 0 1 1-5.1-5.1c.4 0 .8 0 1.2.1v2.5a2.6 2.6 0 1 0 1.5 2.4V3h4.3c.3 1 .9 1.8 1.8 2.4" fill="currentColor"/></svg><span>TIKTOK</span></a>
+      <a id="whatsappLink" href="#" target="_blank" rel="noopener noreferrer"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A10.5 10.5 0 0 0 4.2 16.3L3 21l4.8-1.2A10.5 10.5 0 1 0 20.5 3.5Zm-8.4 17a8.8 8.8 0 0 1-4.5-1.2l-.3-.2-2.8.7.7-2.7-.2-.3A8.8 8.8 0 1 1 12.1 20.5Zm4.8-6.6c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.7.2-.2.3-.7.9-.8 1.1-.2.2-.3.2-.6.1-1.6-.8-2.7-1.5-3.7-3.2-.3-.5.3-.5.8-1.6.1-.2.1-.4 0-.6-.1-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.6s1.1 3 1.2 3.2c.2.2 2.1 3.2 5.1 4.5.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.3.2-.6.2-1.2.1-1.3-.1-.2-.3-.3-.6-.4Z" fill="currentColor"/></svg><span>WHATSAPP</span></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="logo">SZAS</div>
+  <p>INTRIGA Y REBELDÍA · COLOMBIA</p>
+  <div class="footer-socials">
+    <a id="footerInstagram" href="#" target="_blank" rel="noopener noreferrer"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="6.7" r="1.15" fill="currentColor"/></svg><span>INSTAGRAM</span></a>
+    <a id="footerTikTok" href="#" target="_blank" rel="noopener noreferrer"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14.2 3v11.1a4.1 4.1 0 1 1-3.1-4v3.1a1.2 1.2 0 1 0 0 2.4c.7 0 1.2-.5 1.2-1.2V3h1.9c.4 1.8 1.5 3.1 3.2 3.7V9c-1.2-.2-2.3-.7-3.2-1.4V14a5.1 5.1 0 1 1-5.1-5.1c.4 0 .8 0 1.2.1v2.5a2.6 2.6 0 1 0 1.5 2.4V3h4.3c.3 1 .9 1.8 1.8 2.4" fill="currentColor"/></svg><span>TIKTOK</span></a>
+    <a id="footerWhatsApp" href="#" target="_blank" rel="noopener noreferrer"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A10.5 10.5 0 0 0 4.2 16.3L3 21l4.8-1.2A10.5 10.5 0 1 0 20.5 3.5Zm-8.4 17a8.8 8.8 0 0 1-4.5-1.2l-.3-.2-2.8.7.7-2.7-.2-.3A8.8 8.8 0 1 1 12.1 20.5Zm4.8-6.6c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.7.2-.2.3-.7.9-.8 1.1-.2.2-.3.2-.6.1-1.6-.8-2.7-1.5-3.7-3.2-.3-.5.3-.5.8-1.6.1-.2.1-.4 0-.6-.1-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.6s1.1 3 1.2 3.2c.2.2 2.1 3.2 5.1 4.5.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.3.2-.6.2-1.2.1-1.3-.1-.2-.3-.3-.6-.4Z" fill="currentColor"/></svg><span>WHATSAPP</span></a>
+  </div>
+</footer>
+
+<div class="overlay" id="overlay"></div>
+
+<aside class="cart" id="cart" aria-label="Carrito">
+  <div class="cart-head">
+    <h2>CARRITO</h2>
+    <div class="cart-head-actions">
+      <button class="cart-clear" id="clearCart" type="button">VACIAR</button>
+      <button class="modal-close" id="closeCart" type="button" aria-label="Cerrar" style="position:static;font-size:22px">×</button>
+    </div>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-bottom">
+    <div class="cart-total"><span>TOTAL</span><strong id="cartTotal">$0</strong></div>
+    <button class="btn dark full" id="checkout" type="button">FINALIZAR PEDIDO</button>
+  </div>
+</aside>
+
+<div class="modal-backdrop" id="modalBackdrop"></div>
+
+<section class="product-modal" id="productModal" role="dialog" aria-modal="true" aria-labelledby="detailName">
+  <button class="modal-close" id="closeProduct" type="button" aria-label="Cerrar">×</button>
+  <div class="detail-gallery">
+    <div class="main-photo" id="mainPhoto"></div>
+    <div class="thumbs" id="thumbs"></div>
+  </div>
+  <div class="detail-info">
+    <span class="eyebrow dark-eyebrow" id="detailCategory"></span>
+    <h2 id="detailName"></h2>
+    <div class="detail-price" id="detailPrice"></div>
+    <p id="detailDescription"></p>
+
+    <div class="detail-field" id="colorOptions" hidden>
+      <label>COLOR</label>
+      <div class="color-grid" id="colorGrid"></div>
+    </div>
+
+    <div class="detail-field" id="singleSizeField">
+      <label for="detailSize">TALLA</label>
+      <div class="size-select-row">
+        <select id="detailSize"></select>
+        <button class="size-guide-btn" id="openGuide" type="button">GUÍA DE TALLAS</button>
+      </div>
+    </div>
+
+    <div class="bundle-options" id="bundleOptions" hidden>
+      <label>FORMA DE COMPRA</label>
+      <div class="bundle-grid" id="bundleGrid"></div>
+      <div class="bundle-size" id="bundleFullSizes"></div>
+    </div>
+
+    <div class="quantity">
+      <label>CANTIDAD</label>
+      <div><button id="minus" type="button">−</button><span id="qty">1</span><button id="plus" type="button">+</button></div>
+    </div>
+
+    <div class="detail-actions">
+      <button class="btn dark" id="addDetail" type="button">AÑADIR AL CARRITO</button>
+      <button class="btn outline" id="buyNow" type="button">COMPRAR AHORA</button>
+    </div>
+  </div>
+</section>
+
+<section class="guide-modal" id="guideModal" role="dialog" aria-modal="true" aria-labelledby="guideTitle">
+  <button class="modal-close" id="closeGuide" type="button" aria-label="Cerrar">×</button>
+  <span class="eyebrow dark-eyebrow">MEDIDAS</span><h2 id="guideTitle">GUÍA DE TALLAS</h2>
+  <div class="guide-tabs" id="guideTabs"></div>
+  <div class="guide-table-wrap" id="guideContent"></div>
+</section>
+
+<div class="checkout-modal" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
+  <button class="modal-close" id="closeCheckout" type="button" aria-label="Cerrar">×</button>
+  <span class="eyebrow dark-eyebrow">ÚLTIMO PASO</span><h2 id="checkoutTitle">DATOS DEL PEDIDO</h2>
+  <form id="checkoutForm">
+    <div class="checkout-group-title">DATOS DE CONTACTO</div>
+    <label>Nombre completo*<input required id="customerName" autocomplete="name"></label>
+    <label>WhatsApp / celular*<input required id="customerPhone" inputmode="tel" autocomplete="tel" placeholder="Ej. 322 498 2212"></label>
+    <label>Correo electrónico <span class="field-optional">OPCIONAL</span><input id="customerEmail" type="email" autocomplete="email" placeholder="Ej. nombre@correo.com"></label>
+
+    <div class="checkout-group-title">DIRECCIÓN DE ENTREGA</div>
+    <label>Departamento*
+      <select required id="customerDepartment" autocomplete="address-level1">
+        <option value="">Selecciona un departamento</option>
+        <option>Amazonas</option><option>Antioquia</option><option>Arauca</option><option>Atlántico</option>
+        <option>Bolívar</option><option>Boyacá</option><option>Caldas</option><option>Caquetá</option>
+        <option>Casanare</option><option>Cauca</option><option>Cesar</option><option>Chocó</option>
+        <option>Córdoba</option><option>Cundinamarca</option><option>Guainía</option><option>Guaviare</option>
+        <option>Huila</option><option>La Guajira</option><option>Magdalena</option><option>Meta</option>
+        <option>Nariño</option><option>Norte de Santander</option><option>Putumayo</option><option>Quindío</option>
+        <option>Risaralda</option><option>San Andrés y Providencia</option><option>Santander</option>
+        <option>Sucre</option><option>Tolima</option><option>Valle del Cauca</option><option>Vaupés</option><option>Vichada</option>
+      </select>
+    </label>
+    <label>Ciudad / municipio*<input required id="customerCity" autocomplete="address-level2" placeholder="Ej. Cali"></label>
+    <label>Barrio*<input required id="customerNeighborhood" autocomplete="address-line2" placeholder="Ej. San Fernando"></label>
+    <label>Código postal <span class="field-optional">OPCIONAL</span><input id="customerPostalCode" inputmode="numeric" autocomplete="postal-code" maxlength="6" placeholder="Ej. 760001"></label>
+
+    <div class="address-row">
+      <label>Tipo de vía*
+        <select required id="customerRoadType">
+          <option value="">Selecciona</option>
+          <option>Calle</option><option>Carrera</option><option>Avenida</option><option>Diagonal</option><option>Transversal</option><option>Circular</option><option>Autopista</option><option>Vía</option>
+        </select>
+      </label>
+      <label>Dirección / número*<input required id="customerAddressNumber" autocomplete="street-address" placeholder="Ej. 15 # 23-45"></label>
+    </div>
+    <label>Apartamento / casa / oficina <span class="field-optional">OPCIONAL</span><input id="customerUnit" autocomplete="address-line2" placeholder="Ej. Apto 301"></label>
+    <label>Torre / bloque / unidad <span class="field-optional">OPCIONAL</span><input id="customerTower" autocomplete="address-line3" placeholder="Ej. Torre 2"></label>
+    <label>Indicaciones adicionales <span class="field-optional">OPCIONAL</span><textarea id="customerNotes" rows="3" placeholder="Ej. Entregar en portería principal."></textarea></label>
+    <div class="checkout-summary" id="checkoutSummary"></div>
+    <button class="btn dark full" type="submit">ENVIAR PEDIDO POR WHATSAPP</button>
+  </form>
+</div>
+
+<!-- IMPORTANTE: config.js debe cargar ANTES de app.js -->
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
