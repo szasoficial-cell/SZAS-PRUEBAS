@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  background: #0a0a0a;
+  color: #f2f0ec;
+}
+
+* {
+  border-color: #262626;
+}
+
+::selection {
+  background: #f2f0ec;
+  color: #0a0a0a;
+}
+
+.data-num {
+  font-family: var(--font-plex-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+input,
+select,
+textarea {
+  background: #0a0a0a;
+  border: 1px solid #262626;
+  color: #f2f0ec;
+  padding: 0.6rem 0.75rem;
+  font-size: 0.9rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #f2f0ec;
+  outline-offset: 1px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  text-align: left;
+  font-weight: 500;
+  color: #8f8f8f;
+  font-size: 0.75rem;
+  padding: 0.6rem 0.75rem;
+  border-bottom: 1px solid #262626;
+}
+
+td {
+  padding: 0.6rem 0.75rem;
+  border-bottom: 1px solid #171717;
+  font-size: 0.9rem;
+}
